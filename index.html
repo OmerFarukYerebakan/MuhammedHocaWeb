@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Özlü Söz</title>
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --text:#e6eef8;
+      --muted:#9fb0c6;
+      --accent:#3b82f6;
+      --radius:16px;
+      --max-width:720px;
+    }
+    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:linear-gradient(180deg,#081022 0%, #071427 100%);color:var(--text);}
+    .wrap{max-width:var(--max-width);margin:0 auto;padding:18px;box-sizing:border-box;}
+
+    .hero{
+      width:100%;
+      border-radius:var(--radius);
+      overflow:hidden;
+      background:linear-gradient(180deg, rgba(0,0,0,0.25), rgba(0,0,0,0.45));
+      box-shadow:0 8px 24px rgba(2,6,23,0.6);
+      margin-bottom:14px;
+    }
+    .hero .imgbox{aspect-ratio:210/297;display:block;width:100%;}
+    .hero img{width:100%;height:100%;display:block;object-fit:cover;object-position:center center;}
+
+    .card{background:rgba(255,255,255,0.02);padding:14px;border-radius:12px;backdrop-filter:blur(6px);} 
+    h1{font-size:1.1rem;margin:0 0 8px 0;letter-spacing:0.2px}
+    p{margin:0 0 8px 0;color:var(--muted);line-height:1.45}
+
+    .meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+    .chip{padding:6px 10px;border-radius:999px;background:rgba(255,255,255,0.03);font-size:0.82rem;color:var(--muted);}
+
+    @media(min-width:900px){
+      body{background:linear-gradient(180deg,#071227 0%, #041022 100%);}
+      .wrap{padding:28px}
+    }
+
+    .editable{white-space:pre-wrap}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="imgbox">
+        <!-- Fotoğraf aynı klasörde olduğundan direkt adını yazıyoruz -->
+        <img src="MuhammedHoca.png" alt="Ana görsel" />
+      </div>
+    </section>
+
+    <article class="card">
+      <h1 id="baslik" class="editable">Muhammed Arslan GÜVEN</h1>
+      <p id="paragraf1" class="editable">Hep Mutlu Olursan, Mutlu Olduğunun Farkına Varmazsın.
+~Muhammed Arslan GÜVEN</p>
+
+      <div class="meta">
+        <span class="chip">2025</span>
+        <span class="chip">ÖzlüSöz</span>
+      </div>
+    </article>
+
+    
+  </div>
+</body>
+</html>
